@@ -1,0 +1,13 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pp;
+    background-color: rgb(38, 101, 156);
+}
+p{
+    text-align: center;
+    width:275 px;
+    border:2px solid #c5daeb;
+    padding: 60px;
+    margin: 70px;
+    background-image: url("Link2.png");
+}

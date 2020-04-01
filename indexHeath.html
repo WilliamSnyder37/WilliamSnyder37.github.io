@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Heath's First Webpage</title>
+    <link rel="stylesheet" href="HeathStyle.css">
+</head>
+<body>
+    <h1 style="text-align:center">THE MEAN TEACHER AND LINK</h1>
+    <p>by Heath Snyder</p>
+    <p>Link got very nervous and angry at the mean teacher.  When he looked at the mean teacher, he accidentally burnt a hole, with his eyes, in her left shoe. He has lazer eyes and an excellent arrow shooter. 
+        Link got his super powers from his dad, Superman! Some kids make fun of link which causes him to get out of control and to burn things with his eyes </p>
+    <img src="Link.png" alt="Link" width="300" height="400">
+   
+    <p>The mean teacher asked Link what do you love? Link stated that he loves:</p>
+    <ol>
+        <li>fighting</li>
+        <li>famly</li>
+        <li>video games</li>
+    </ol>
+    <button onclick="getLocation()">get your location</button>
+    <p id="demo">Link's current location is: </p>
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+        }
+
+        function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+</body>
